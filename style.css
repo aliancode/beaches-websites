@@ -14,11 +14,11 @@
 
 
 header {
-    position: fixed;   /* يبقى دائما في الأعلى */
+    position: fixed;   
     top: 0;
     left: 0;
-    width: 100vw;      /* العرض كامل ديال نافذة المتصفح */
-    z-index: 1000;     /* يطلع فوق كلشي */
+    width: 100vw;      
+    z-index: 1000;
   }
 
 
@@ -467,19 +467,19 @@ h5 {
   }
 
   .panel[data-image="houses"]::before {
-    background-image: url('/home/siham/Bureau/beach/where.png');
+    background-image: url('where.png');
   }
 
   .panel[data-image="availability"]::before {
-    background-image: url('/home/siham/Bureau/beach/photo5jpg.jpg');
+    background-image: url('photo5jpg.jpg');
   }
 
   .panel[data-image="gallery"]::before {
-    background-image: url('/home/siham/Bureau/beach/photo0jpg.jpg');
+    background-image: ('photo0jpg.jpg');
   }
 
   .panel[data-image="faq"]::before {
-    background-image: url('/home/siham/Bureau/beach/Legzira.png');
+    background-image: url('Legzira.png');
   }
 
   .text {

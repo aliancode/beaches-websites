@@ -1,16 +1,23 @@
-
-body {
+/*body {
   background-color: rgb(249, 245, 246);
   color: #333;
   font-family: 'Segoe UI', sans-serif;
-}
+  overflow-x: cover;
+  max-width: 100%;
+  overflow-x: hidden;
+}*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
 
 header {
@@ -29,15 +36,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(92, 131, 116, 0.8); /* transparent black background */
-  backdrop-filter: blur(10px); /* smooth glass effect */
+  background: rgba(92, 131, 116, 0.8); 
+  backdrop-filter: blur(10px);
   color: white;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+
 
 .nav-links {
   list-style: none;
@@ -48,14 +52,16 @@ header {
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: rgb(27, 66, 66);
 }
-
+.logo{
+  font-size: 26px;
+}
 .hero {
   position: relative;
   height: 100vh;
@@ -91,6 +97,9 @@ header {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  
+  font-family: 'Playfair Display', serif; /* Élégant */
+ 
 
       font-size: 3rem;
       font-weight: bold;
@@ -124,6 +133,7 @@ header {
   border-radius: 30px;
   font-weight: 1000px;
   border: none;
+ 
   
   
 }
@@ -256,7 +266,7 @@ h5 {
   height: 160px; 
   max-width: 100%;
   object-fit: contain;
-  transition: transform 0.3s ease;/*Vitesse d'animation (commence doucement, accélère, finit doucement).*/
+  transition: transform 0.3s ease;
 }
 
 
@@ -292,7 +302,7 @@ h5 {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
   gap: 20px;
   padding: 20px 0;
-  /*scroll-snap-type: x mandatory;*/
+ 
 }
 
 .idea-card {
@@ -310,7 +320,7 @@ h5 {
 }
 
 .idea-card:hover {
-  transform: scale(1.05); /* card gets a bit bigger on hover */
+  transform: scale(1.05); 
 }
 
 .idea-card img {
@@ -440,17 +450,13 @@ h5 {
   
   
   .faq-section {
-      max-width: 1200px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
+     
+             
     .faq-content { display: none; }
-    .faq-content.active { display: block; }/*display: block = Élément visible + bloc.
-
-    display: none = Élément invisible + pas d'espace réservé.*/
+    .faq-content.active { display: block; }
   
     
-    
+  }
     
     
     
@@ -578,7 +584,7 @@ h5 {
 .footer-col ul li a {
     color: #e0e0e0;
     text-decoration: none;
-    transition: all 0.3s ease;/*all → Toutes les propriétés CSS qui changent seront animées.*/
+    transition: all 0.3s ease;
     font-size: 0.95rem;
 }
 
@@ -589,12 +595,7 @@ h5 {
       line-height: 1.6;
   }
 
- /* .brand-logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-      
-  }*/
+ 
 
 
 
@@ -1109,7 +1110,7 @@ align-items: center;
 direction: rtl;
 }
 
-.beach-row.reverse > * {/*hadok stars kibano */
+.beach-row.reverse > * {
 direction: ltr;
 }
 .beach-image-wrapper {
@@ -1265,11 +1266,12 @@ gap: 10px;
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .review-card {
     background-color: white;
+   
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -1332,7 +1334,7 @@ gap: 10px;
     }
 }
 
-/* Decorative elements */
+
 .leaf-decoration {
     position: absolute;
     width: 100px;
@@ -1352,3 +1354,5 @@ gap: 10px;
     right: 5%;
     transform: rotate(-20deg);
 }
+
+
